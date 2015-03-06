@@ -1,7 +1,8 @@
 ## How to use : 
 
 Place all the R files in your current R working directory
-Make sure to unzip <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a>  and is in your current working R directory 
+Make sure to unzip <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a>  
+and place it in your current working R directory 
 
  ```
 	plot_files <- c("plot1.R", "plot2.R", "plot3.R", "plot4.R")
