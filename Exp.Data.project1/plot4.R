@@ -15,7 +15,7 @@ plot4 <- function(){
  #  at the right top plot Voltage as a function of Time : 
     plot(hhp$Date, hhp$Voltage, type="l", xlab="datetime", ylab="Voltage")
     
- # Bottom Left, This is plot3() ! ## Copy paste :D
+ # Bottom Left, This is plot3() ! ## Copy paste with the adition of bty and pt.cex to adjust the legend:D
    plot(hhp$Date,hhp$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
    lines(hhp$Date,hhp$Sub_metering_2,col="red")
    lines(hhp$Date,hhp$Sub_metering_3,col="blue")
@@ -28,4 +28,6 @@ plot4 <- function(){
  # .. and finally copy the plot to a PNG file and close device
    dev.copy(png, file = "plot4.png", width=480, height=480)  
    dev.off()  
+ # Reset the screen device rows and columns 
+   par(mfrow=c(1,1))
 }
